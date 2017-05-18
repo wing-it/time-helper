@@ -1,0 +1,42 @@
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Hour Summary</title>
+
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/styles.css" rel="stylesheet">
+    <script src="js/jquery.js"></script>
+    <script src="js/functions.js"></script>
+    <script src="js/papaparse.min.js"></script>
+    <script src="js/underscore-min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <!--[if lt IE 9]>
+      <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/r29/html5.min.js">
+      </script>
+    <![endif]-->
+  </head>
+
+  <body><div id="holder">
+
+    <div id="body"><div class='container'>
+      <input type="file" id="csvFile" onchange="handleFiles(this.files)">
+      <h1 id="monthTitle"></h1>
+      <div class='row'>
+          <div class='dateCell topRow'>Sunday</div>
+          <div class='dateCell topRow'>Monday</div>
+          <div class='dateCell topRow'>Tuesday</div>
+          <div class='dateCell topRow'>Wednesday</div>
+          <div class='dateCell topRow'>Thursday</div>
+          <div class='dateCell topRow'>Friday</div>
+          <div class='dateCell topRow'>Saturday</div>
+      </div>
+
+      <div id='calendar' class='row' style='margin-bottom: 20px'>
+      </div>
+
+
+    </div></div>
+
+  </div></body>
+</html>
